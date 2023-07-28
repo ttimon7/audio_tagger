@@ -11,13 +11,13 @@ from sootworks.audio_tagger.domain.model import AudioTrackInfo
 from sootworks.audio_tagger.domain.repository import LIB_SPECIFIC_SONG_OBJECT, IAudioTagMapper, IAudioFileTagger
 
 
-TAGGING_LIB = "eye3D"
+TAGGING_LIB = "eyeD3"
 SUPPORTED_AUDIO_FILE_EXTENTIONS = {
     "mp3",
 }
 
 
-class _Eye3DArtistAudioTagMapper(IAudioTagMapper):
+class _EyeD3ArtistAudioTagMapper(IAudioTagMapper):
     tag_type = TagType.ARTIST
     compatible_tagging_lib = TAGGING_LIB
 
@@ -25,7 +25,7 @@ class _Eye3DArtistAudioTagMapper(IAudioTagMapper):
         song.tag.artist = track_info.artist
 
 
-class _Eye3DAlbumAudioTagMapper(IAudioTagMapper):
+class _EyeD3AlbumAudioTagMapper(IAudioTagMapper):
     tag_type = TagType.ALBUM
     compatible_tagging_lib = TAGGING_LIB
 
@@ -33,7 +33,7 @@ class _Eye3DAlbumAudioTagMapper(IAudioTagMapper):
         song.tag.album = track_info.album
 
 
-class _Eye3DTitleAudioTagMapper(IAudioTagMapper):
+class _EyeD3TitleAudioTagMapper(IAudioTagMapper):
     tag_type = TagType.TITLE
     compatible_tagging_lib = TAGGING_LIB
 
@@ -41,7 +41,7 @@ class _Eye3DTitleAudioTagMapper(IAudioTagMapper):
         song.tag.title = track_info.title
 
 
-class _Eye3DDateAudioTagMapper(IAudioTagMapper):
+class _EyeD3DateAudioTagMapper(IAudioTagMapper):
     tag_type = TagType.DATE
     compatible_tagging_lib = TAGGING_LIB
 
@@ -49,7 +49,7 @@ class _Eye3DDateAudioTagMapper(IAudioTagMapper):
         song.tag.release_date = track_info.date
 
 
-class _Eye3DTrackNumbersAudioTagMapper(IAudioTagMapper):
+class _EyeD3TrackNumbersAudioTagMapper(IAudioTagMapper):
     tag_type = TagType.TRACK_NUM
     compatible_tagging_lib = TAGGING_LIB
 
@@ -57,7 +57,7 @@ class _Eye3DTrackNumbersAudioTagMapper(IAudioTagMapper):
         song.tag.track_num = (track_info.track_number, track_info.total_tracks)
 
 
-class _Eye3DGenreAudioTagMapper(IAudioTagMapper):
+class _EyeD3GenreAudioTagMapper(IAudioTagMapper):
     tag_type = TagType.GENRE
     compatible_tagging_lib = TAGGING_LIB
 
@@ -65,7 +65,7 @@ class _Eye3DGenreAudioTagMapper(IAudioTagMapper):
         song.tag.genre = track_info.genre
 
 
-class _Eye3DDiscsAudioTagMapper(IAudioTagMapper):
+class _EyeD3DiscsAudioTagMapper(IAudioTagMapper):
     tag_type = TagType.DISC_NUM
     compatible_tagging_lib = TAGGING_LIB
 
@@ -73,7 +73,7 @@ class _Eye3DDiscsAudioTagMapper(IAudioTagMapper):
         song.tag.disc_num = (track_info.disc_number, track_info.total_discs)
 
 
-class _Eye3DCoverAudioTagMapper(IAudioTagMapper):
+class _EyeD3CoverAudioTagMapper(IAudioTagMapper):
     tag_type = TagType.COVER
     compatible_tagging_lib = TAGGING_LIB
 
@@ -81,7 +81,7 @@ class _Eye3DCoverAudioTagMapper(IAudioTagMapper):
         song.tag.images.set(3, track_info.cover_art_jpeg, "image/jpeg")
 
 
-class Eye3DAudioFileTagger(IAudioFileTagger):
+class EyeD3AudioFileTagger(IAudioFileTagger):
     compatible_tagging_lib = TAGGING_LIB
     supported_audio_file_extentions = SUPPORTED_AUDIO_FILE_EXTENTIONS
 
@@ -97,14 +97,14 @@ class Eye3DAudioFileTagger(IAudioFileTagger):
     def get_mappers(cls, suffix: str) -> tuple[IAudioTagMapper]:
         return (
             (
-                _Eye3DArtistAudioTagMapper(),
-                _Eye3DAlbumAudioTagMapper(),
-                _Eye3DTitleAudioTagMapper(),
-                _Eye3DDateAudioTagMapper(),
-                _Eye3DTrackNumbersAudioTagMapper(),
-                _Eye3DGenreAudioTagMapper(),
-                _Eye3DDiscsAudioTagMapper(),
-                _Eye3DCoverAudioTagMapper(),
+                _EyeD3ArtistAudioTagMapper(),
+                _EyeD3AlbumAudioTagMapper(),
+                _EyeD3TitleAudioTagMapper(),
+                _EyeD3DateAudioTagMapper(),
+                _EyeD3TrackNumbersAudioTagMapper(),
+                _EyeD3GenreAudioTagMapper(),
+                _EyeD3DiscsAudioTagMapper(),
+                _EyeD3CoverAudioTagMapper(),
             )
             if (suffix in cls.supported_audio_file_extentions)
             else tuple()
