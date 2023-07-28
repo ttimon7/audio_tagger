@@ -7,7 +7,7 @@ from argparse import ArgumentParser
 from pathlib import Path
 
 from sootworks.audio_tagger.application.const import APP, VERSION, CONTACT
-from sootworks.audio_tagger.infrastructure.tagging_lib import Eye3DAudioFileTagger, MusicTagAudioFileTagger
+from sootworks.audio_tagger.infrastructure.tagging_lib import EyeD3AudioFileTagger, MusicTagAudioFileTagger
 from sootworks.audio_tagger.infrastructure.album_info import MusicBrainzAlbumInfoRepository
 from sootworks.audio_tagger.infrastructure.audio_file import SimpleAudioFileRepository
 from sootworks.audio_tagger.application.audio_tagger import SimpleAlbumTagger
@@ -83,7 +83,7 @@ def parse_args() -> tuple[InPath, AlbumQueryParams, DefaultTags, SuffixFilter, O
 def get_mappers() -> dict[str, tuple[IAudioTagMapper]]:
     return {
         MusicTagAudioFileTagger.compatible_tagging_lib: MusicTagAudioFileTagger.get_mappers(),  # preferred
-        Eye3DAudioFileTagger.compatible_tagging_lib: Eye3DAudioFileTagger.get_mappers(),
+        EyeD3AudioFileTagger.compatible_tagging_lib: EyeD3AudioFileTagger.get_mappers(),
     }
 
 
@@ -95,7 +95,7 @@ def main() -> None:
     tagger = SimpleAlbumTagger(
         album_info_repo=album_info_repo,
         audio_file_repo=audio_file_repo,
-        taggers=(MusicTagAudioFileTagger, Eye3DAudioFileTagger),
+        taggers=(MusicTagAudioFileTagger, EyeD3AudioFileTagger),
         suffix_filter=suffix_filter,
     )
     try:
