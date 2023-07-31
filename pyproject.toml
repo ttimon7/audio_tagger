@@ -6,7 +6,7 @@ authors = ["Timon Tomas <ttimon7@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 include = ["CHANGELOG.md"]
-packages = [{include = "sootworks"}]
+packages = [{include = "sootworks", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -24,6 +24,7 @@ pre-commit = "^3.3.3"
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.0.275"
 black = "^23.3.0"
+pytest = "^7.4.0"
 
 [tool.poetry.scripts]
 demo-cli = "audio_tagger.app:main"
