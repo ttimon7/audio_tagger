@@ -1,0 +1,143 @@
+[[albums]]
+title = "Gojira - Fortitude"
+cover_art = "cover.jpg"
+
+[[albums.media]]
+files = [
+  "01 Born For One Thing.flac",
+  "03 Another World.flac",
+  "05 New Found.flac",
+  "07 The Chant.flac",
+  "09 Into The Storm.flac",
+  "11 Grind.flac",
+  "02 Amazonia.flac",
+  "04 Hold On.flac",
+  "06 Fortitude.flac",
+  "08 Sphinx.flac",
+  "10 The Trails.flac"
+]
+
+
+[[albums]]
+title = "Deep Purple - The Complete Albums 1970 - 1976 (10 CD Box Set 2013)"
+cover_art = "folder.jpg"
+
+[[albums.media]]
+dir_name = "CD 01 - Deep Purple - Concerto For Group And Orchestra (1970)[FLAC]-Naftamusic"
+files = [
+  "01 - First Movement (Moderato, Allegro, Vivace).flac",
+  "02 - Second Movement (Andante Part One).flac",
+  "03 - Second Movement (Andante Part Two).flac",
+  "04 - Third Movement (Vivace, Presto).flac"
+]
+
+[[albums.media]]
+dir_name = "CD 02 - Deep Purple - In Rock (1970) [FLAC]-Naftamusic"
+files = [
+  "01 - Speed King.flac",
+  "02 - Bloodsucker.flac",
+  "03 - Child In Time.flac",
+  "04 - Flight Of The Rat.flac",
+  "05 - Into The Fire.flac",
+  "06 - Living Wreck.flac",
+  "07 - Hard Lovin' Man.flac"
+]
+
+[[albums.media]]
+dir_name = "CD 03 - Deep Purple - Fireball (1971)[FLAC]-Naftamusic"
+files = [
+  "01 - Fireball.flac",
+  "02 - No No No.flac",
+  "03 - Strange Kind of Woman.flac",
+  "04 - Anyone's Daughter.flac",
+  "05 - The Mule.flac",
+  "06 - Fools.flac",
+  "07 - No One Came.flac"
+]
+
+[[albums.media]]
+dir_name = "CD 04 - Deep Purple - Machine Head (1972)[FLAC]-Naftamusic"
+files = [
+  "01 - Highway Star.flac",
+  "02 - Maybe I'm A Leo.flac",
+  "03 - Pictures Of Home.flac",
+  "04 - Never Before.flac",
+  "05 - Smoke On The Water.flac",
+  "06 - Lazy.flac",
+  "07 - Space Truckin'.flac"
+]
+
+[[albums.media]]
+dir_name = "CD 05 - Deep Purple - Made In Japan (1972)[FLAC]-Naftamusic"
+files = [
+  "01 - Highway Star.flac",
+  "02 - Child In Time.flac",
+  "03 - Smoke On The Water.flac",
+  "04 - The Mule.flac",
+  "05 - Strange Kind Of Woman.flac",
+  "06 - Lazy.flac",
+  "07 - Space Truckin'.flac"
+]
+
+[[albums.media]]
+dir_name = "CD 06 - Deep Purple - Who Do We Think We Are! (1973)[FLAC]-Naftamusic"
+files = [
+  "01 - Woman From Tokyo.flac",
+  "02 - Mary Long.flac",
+  "03 - Super Trouper.flac",
+  "04 - Smooth Dancer.flac",
+  "05 - Rat Bat Blue.flac",
+  "06 - Place In Line.flac",
+  "07 - Our Lady.flac"
+]
+
+[[albums.media]]
+dir_name = "CD 07 - Deep Purple - Burn (1974)[FLAC]-Naftamusic"
+files = [
+  "01 - Burn.flac",
+  "02 - Might Just Take Your Life.flac",
+  "03 - Lay Down, Stay Down.flac",
+  "04 - Sail Away.flac",
+  "05 - You Fool No One.flac",
+  "06 - What's Goin'On Here.flac",
+  "07 - Mistreated.flac",
+  "08 - ''A'' 200.flac"
+]
+
+[[albums.media]]
+dir_name = "CD 08 - Deep Purple - Stormbringer (1974)[FLAC]-Naftamusic"
+files = [
+  "01 - Stormbringer.flac",
+  "02 - Love Don't Mean A Thing.flac",
+  "03 - Holy Man.flac",
+  "04 - Hold On.flac",
+  "05 - Lady Double Dealer.flac",
+  "06 - You Can't Do It Right (With The One You Love).flac",
+  "07 - High Ball Shooter.flac",
+  "08 - The Gypsy.flac",
+  "09 - Soldier Of Fortune.flac"
+]
+
+[[albums.media]]
+dir_name = "CD 09 - Deep Purple - Come Taste The Band (1975)[FLAC]-Naftamusic"
+files = [
+  "01 - Comin' Home.flac",
+  "02 - Lady Luck.flac",
+  "03 - Gettin' Tighter.flac",
+  "04 - Dealer.flac",
+  "05 - I Need Love.flac",
+  "06 - Drifter.flac",
+  "07 - Love Child.flac",
+  "08 - This Time Around - Owed To 'G' (Instrumental).flac",
+  "09 - You Keep On Moving.flac"
+]
+
+[[albums.media]]
+dir_name = "CD 10 - Deep Purple - Made In Europe (1976)[FLAC]-Naftamusic"
+files = [
+  "01 - Burn.flac",
+  "02 - Mistreated (Interpolating Rock Me Baby).flac",
+  "03 - Lady Double Dealer.flac",
+  "04 - You Fool No One.flac",
+  "05 - Stormbringer.flac"
+]
